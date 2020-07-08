@@ -1,0 +1,154 @@
+
+@media(min-width: 370px) and (orientation: portrait){
+    
+    body h1.page-title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 520px) and (orientation: portrait){
+    
+    
+    body section.main .container-for-main-elements .main-text h1{
+        font-size: 2.2rem;
+    }
+
+    body section.main .container-for-main-elements .main-text h2 {
+        font-size: 1.4rem;
+    }
+
+    body section.main .container-for-main-elements button.see-more {
+        flex-basis: 70px;
+        width: 270px;
+
+    }
+    body h1.page-title {
+        font-size: 2.2rem;
+    }
+
+    body section.skills .skills-container article.skill-article p {
+        padding: 0 30px;
+        font-size: 1.5rem;
+    }
+
+    body section.about article.about-article , body section.hobby article.music-article {
+        padding: $padding-for-articles-portrait;
+        width: 90%;
+        margin: 30px auto;
+        box-shadow: $box-shadow-for-elements;
+    }
+    
+    body section.contact header.title-block {
+        height: 100px;
+    }
+    body section.contact header.title-block h1 {
+        font-size: 2.2rem;
+    }
+
+    body section.contact div.social-media {
+        margin: -30px auto 0 auto;
+    }
+
+}
+
+@media(min-width:700px) and (orientation: portrait){
+    
+    body section.main .container-for-main-elements .face-icon {
+        width: 270px;
+        flex-basis: 270px;
+        margin-bottom: 80px;
+    }
+
+    body section.main .container-for-main-elements .main-text h1{
+        font-size: 3rem;
+    }
+
+    body section.main .container-for-main-elements .main-text h2 {
+        font-size: 1.9rem;
+    }
+
+    body section.main .container-for-main-elements button.see-more {    
+    font-size: 1.6rem;
+    width: 300px;
+    flex-basis: 80px;
+    }
+
+    body h1.page-title {
+        font-size: 2.8rem;
+      
+    }
+    body h3.article-title {
+        font-size: 2.3rem;
+      }
+
+    body section.hobby article.music-article p {
+        font-size: 1.7rem;
+
+      }
+
+      body section.about article.about-article p.content {
+        font-size: 1.7rem;
+    
+      }
+
+    body section.skills .skills-container article.skill-article p {
+        padding: 0 70px;
+        font-size: 1.7rem;
+    }
+
+    body section.contact .contact-info p a {
+
+        font-size:2rem;
+        letter-spacing: 3px;
+      }
+
+}
+
+@media(min-width: 1000px) and (orientation: portrait){
+    body section.main .container-for-main-elements .face-icon {
+        width: 350px;
+        flex-basis: 350px;
+        margin-bottom: 100px;
+    }
+
+    body section.main .container-for-main-elements .main-text h1{
+        font-size: 3.4rem;
+    }
+
+    body section.main .container-for-main-elements .main-text h2 {
+        font-size: 2.4rem;
+    }
+
+    body section.main .container-for-main-elements button.see-more {    
+        font-size: 1.8rem;
+        width: 320px;
+        flex-basis: 90px;
+        }
+    
+    
+    body h1.page-title {
+        font-size: 3.2rem;
+      
+    }
+    body h3.article-title {
+        font-size: 2.6rem;
+      }
+
+    body section.hobby article.music-article p {
+        font-size: 1.8rem;
+
+      }
+    
+    body section.skills .skills-container article.skill-article p {
+        padding: 0 100px;
+        font-size: 1.8rem;
+    }
+
+    
+body section.about article.about-article p.content {
+    font-size: 1.8rem;
+
+  }
+
+}
+

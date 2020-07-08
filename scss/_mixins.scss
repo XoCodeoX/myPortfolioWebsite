@@ -1,0 +1,12 @@
+@mixin background-properties($bg-pos, $bg-size, $bg-url, $bg-repeat){
+    background-position: $bg-pos;
+    background-size:$bg-size;
+    background-image: url($bg-url);
+    background-repeat: $bg-repeat;
+}
+
+@mixin flex-properties($display, $direction,$wrap){
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

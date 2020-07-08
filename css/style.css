@@ -1,0 +1,1021 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  font-size: 10px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/20/10/47/grey-2661270_1280.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body section.main {
+  height: 100vh;
+}
+
+body section.main header > .main-button {
+  display: none;
+}
+
+body section.main nav.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body section.main header > nav {
+  width: 100vw;
+  height: 14vh;
+  font-size: 1.4rem;
+  -webkit-transform: translateY(-102%);
+      -ms-transform: translateY(-102%);
+          transform: translateY(-102%);
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+}
+
+body section.main header > nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  background-color: #393439;
+  border-radius: 0 0 10px 10px;
+  max-width: 100vw;
+}
+
+body section.main header > nav ul li {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 30%;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body section.main header > nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 4px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: calc(14vh / 3);
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body section.main header > nav ul li a:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+body section.main header > .burger-icon {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/Icon feather-menu.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 99999;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body section.main .burger-icon.burgerMover {
+  top: 15vh;
+}
+
+body section.main .container-for-main-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 34%;
+}
+
+body section.main .container-for-main-elements .face-icon {
+  width: 180px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/face_co (5).png");
+  background-repeat: no-repeat;
+  -ms-flex-preferred-size: 180px;
+      flex-basis: 180px;
+  margin-bottom: 40px;
+}
+
+body section.main .container-for-main-elements .main-text {
+  padding-top: 40px;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  border-top: 8px solid #393439;
+}
+
+body section.main .container-for-main-elements .main-text h1 {
+  font-size: 1.9rem;
+  letter-spacing: 3px;
+}
+
+body section.main .container-for-main-elements .main-text h2 {
+  font-size: 1.2rem;
+  color: #7C1BB6;
+}
+
+body section.main .container-for-main-elements button.see-more {
+  margin-top: 60px;
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+  width: 240px;
+  border-radius: 30px;
+  background-color: #7C1BB6;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 7px 7px 7px 0px #c7c7c7;
+          box-shadow: 7px 7px 7px 0px #c7c7c7;
+  cursor: pointer;
+  -webkit-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+body section.main .container-for-main-elements button.see-more:hover {
+  background-color: #fff;
+  color: #7C1BB6;
+  border: 3px solid #7C1BB6;
+}
+
+body h1.page-title {
+  font-size: 1.7rem;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  margin: 80px auto 50px auto;
+  letter-spacing: 5px;
+}
+
+body h1.page-title span {
+  color: #7C1BB6;
+}
+
+body h3.article-title {
+  font-size: 1.9rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 3px solid white;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 3px;
+}
+
+body section.about {
+  height: auto;
+}
+
+body section.about article.about-article {
+  width: 100%;
+  height: auto;
+  padding: 40px 26px;
+  background-color: #393439;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  -webkit-box-shadow: 7px 7px 7px 0px #c7c7c7;
+          box-shadow: 7px 7px 7px 0px #c7c7c7;
+}
+
+body section.about article.about-article p.content {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+body section.skills {
+  height: auto;
+}
+
+body section.skills .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body section.skills .skills-container article.skill-article {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  padding: 50px 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+body section.skills .skills-container article.skill-article .technology-icon {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/SkillsPageIcons/Icon awesome-html5.png");
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 70px;
+  display: block;
+}
+
+body section.skills .skills-container article.skill-article p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+body section.skills .skills-container article.skill-article:nth-of-type(2) > .technology-icon {
+  background-image: url("../images/SkillsPageIcons/Icon awesome-css3-alt.png");
+}
+
+body section.skills .skills-container article.skill-article:nth-of-type(2) {
+  background-color: #7C1BB6;
+  color: #fff;
+}
+
+body section.skills .skills-container article.skill-article:nth-of-type(3) > .technology-icon {
+  background-image: url("../images/SkillsPageIcons/Icon simple-javascript.png");
+}
+
+body section.hobby {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.hobby .music-icon {
+  width: 150px;
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/MusicPageIcons/Icon awesome-music.png");
+  background-repeat: no-repeat;
+  border-bottom: 5px solid #7C1BB6;
+}
+
+body section.hobby article.music-article {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+  padding: 40px 26px;
+  background-color: #7C1BB6;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+body section.hobby article.music-article p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+body section.hobby .xo-icon {
+  width: 150px;
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/MusicPageIcons/XOICON.png");
+  background-repeat: no-repeat;
+}
+
+body section.contact {
+  height: auto;
+}
+
+body section.contact header.title-block {
+  width: 100%;
+  height: 80px;
+  background-color: #393439;
+  line-height: 80px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.7rem;
+}
+
+body section.contact header.title-block h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+body section.contact div.social-media {
+  margin: -16px auto 0 auto;
+  height: auto;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+}
+
+body section.contact div.social-media .social-media-element {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 80px;
+  border: 1px solid gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.contact div.social-media .social-media-element .sm-icon {
+  background-size: contain;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body section.contact div.social-media .social-media-element .sm-icon:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(1) {
+  border-radius: 10px 0 0 0;
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(1) .sm-icon {
+  background-image: url("../images/ContactPageIcons/Icon awesome-facebook-f.png");
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(2) {
+  border-radius: 0 10px 0 0;
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(2) .sm-icon {
+  background-image: url("../images/ContactPageIcons/Icon awesome-instagram.png");
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(3) {
+  border-radius: 0 0 0 10px;
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(3) .sm-icon {
+  background-image: url("../images/ContactPageIcons/Icon awesome-linkedin.png");
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(4) {
+  border-radius: 0 0  10px 0;
+}
+
+body section.contact div.social-media .social-media-element:nth-of-type(4) .sm-icon {
+  background-image: url("../images/ContactPageIcons/Icon awesome-github.png");
+}
+
+body section.contact .contact-info {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.contact .contact-info p {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+body section.contact .contact-info p a {
+  text-decoration: none;
+  color: #393439;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  display: block;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body section.contact .contact-info p a:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  color: black;
+}
+
+body section.contact footer {
+  width: 100%;
+  height: 10vh;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-color: #393439;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 10vh;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 370px) and (orientation: portrait) {
+  body h1.page-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 520px) and (orientation: portrait) {
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 2.2rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 1.4rem;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    -ms-flex-preferred-size: 70px;
+        flex-basis: 70px;
+    width: 270px;
+  }
+  body h1.page-title {
+    font-size: 2.2rem;
+  }
+  body section.skills .skills-container article.skill-article p {
+    padding: 0 30px;
+    font-size: 1.5rem;
+  }
+  body section.about article.about-article, body section.hobby article.music-article {
+    padding: 40px 60px;
+    width: 90%;
+    margin: 30px auto;
+    -webkit-box-shadow: 7px 7px 7px 0px #c7c7c7;
+            box-shadow: 7px 7px 7px 0px #c7c7c7;
+  }
+  body section.contact header.title-block {
+    height: 100px;
+  }
+  body section.contact header.title-block h1 {
+    font-size: 2.2rem;
+  }
+  body section.contact div.social-media {
+    margin: -30px auto 0 auto;
+  }
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  body section.main .container-for-main-elements .face-icon {
+    width: 270px;
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+    margin-bottom: 80px;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 3rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 1.9rem;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    font-size: 1.6rem;
+    width: 300px;
+    -ms-flex-preferred-size: 80px;
+        flex-basis: 80px;
+  }
+  body h1.page-title {
+    font-size: 2.8rem;
+  }
+  body h3.article-title {
+    font-size: 2.3rem;
+  }
+  body section.hobby article.music-article p {
+    font-size: 1.7rem;
+  }
+  body section.about article.about-article p.content {
+    font-size: 1.7rem;
+  }
+  body section.skills .skills-container article.skill-article p {
+    padding: 0 70px;
+    font-size: 1.7rem;
+  }
+  body section.contact .contact-info p a {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 1000px) and (orientation: portrait) {
+  body section.main .container-for-main-elements .face-icon {
+    width: 350px;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin-bottom: 100px;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 3.4rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 2.4rem;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    font-size: 1.8rem;
+    width: 320px;
+    -ms-flex-preferred-size: 90px;
+        flex-basis: 90px;
+  }
+  body h1.page-title {
+    font-size: 3.2rem;
+  }
+  body h3.article-title {
+    font-size: 2.6rem;
+  }
+  body section.hobby article.music-article p {
+    font-size: 1.8rem;
+  }
+  body section.skills .skills-container article.skill-article p {
+    padding: 0 100px;
+    font-size: 1.8rem;
+  }
+  body section.about article.about-article p.content {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 560px) and (min-height: 320px) and (orientation: landscape) {
+  body section.main {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+  body section.main header > .main-button {
+    display: block;
+    height: 46px;
+    width: 140px;
+    background-color: #7C1BB6;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0 0 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    letter-spacing: 4px;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    cursor: pointer;
+  }
+  body section.main header > .main-button:hover {
+    background-color: white;
+    color: #7C1BB6;
+    border: 1px solid #7C1BB6;
+  }
+  body section.main header > nav {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    width: 46%;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    height: 46px;
+    border-radius: 0 0 0 10px;
+  }
+  body section.main header > nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    border-radius: 0 0 0 10px;
+  }
+  body section.main header > nav ul li {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    height: 100%;
+  }
+  body section.main header > nav ul li a {
+    height: 100%;
+    display: block;
+    line-height: 46px;
+  }
+  body section.main header > .burger-icon {
+    display: none;
+  }
+  body section.main .container-for-main-elements {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: calc(50vh - 130px/2);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body section.main .container-for-main-elements .face-icon {
+    -ms-flex-preferred-size: 130px;
+        flex-basis: 130px;
+    height: 130px;
+    margin: 0;
+  }
+  body section.main .container-for-main-elements .main-text {
+    padding: 30px 0;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    border: none;
+    border-left: 3px solid #393439;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 0.9rem;
+    color: #7C1BB6;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+    margin: 0;
+    font-size: 0.9rem;
+    height: 40px;
+    margin-left: 25%;
+  }
+  body h1.page-title {
+    font-size: 1.8rem;
+  }
+  body h3.article-title {
+    font-size: 1.3rem;
+  }
+  body section.about article.about-article {
+    width: 90%;
+    padding: 40px 40px;
+    background-color: #393439;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+  }
+  body section.about article.about-article p.content {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  section.skills h1.page-title {
+    text-align: left;
+    margin: 40px 0 40px 20px;
+  }
+  body section.skills .skills-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body section.skills .skills-container article.skill-article {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    padding: 20px 10px;
+    height: 280px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 7px 7px 7px 0px #c7c7c7;
+            box-shadow: 7px 7px 7px 0px #c7c7c7;
+  }
+  body section.skills .skills-container article.skill-article .technology-icon {
+    height: 60px;
+    width: 50px;
+  }
+  body section.skills .skills-container article.skill-article p {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body section.skills .skills-container article.skill-article:nth-of-type(1) {
+    margin-top: -132px;
+    background-color: #fff;
+  }
+  body section.skills .skills-container article.skill-article:nth-of-type(3) {
+    margin-top: 132px;
+    background-color: #fff;
+  }
+  body section.hobby h1.page-title, body section.hobby .music-icon {
+    margin-top: -30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    border: none;
+  }
+  body section.hobby h1.page-title {
+    margin-right: calc(5% + 9px);
+  }
+  body section.hobby .music-icon {
+    margin-right: calc(9% + 9px);
+    margin-top: 100px;
+  }
+  body section.hobby article.music-article {
+    width: 53%;
+    height: auto;
+    margin-top: -60px;
+    margin-left: calc(5% + 9px);
+    padding: 20px 10px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-shadow: 7px 7px 7px 0px #c7c7c7;
+            box-shadow: 7px 7px 7px 0px #c7c7c7;
+  }
+  body section.hobby article.music-article p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  body section.hobby .xo-icon {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 50px;
+  }
+  body section.contact div.social-media {
+    margin: -16px auto 0 auto;
+    height: auto;
+    width: 60%;
+    border-radius: 0;
+  }
+  body section.contact div.social-media .social-media-element {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    height: 80px;
+  }
+  body section.contact div.social-media .social-media-element:nth-of-type(1), body section.contact div.social-media .social-media-element:nth-of-type(2),
+  body section.contact div.social-media .social-media-element:nth-of-type(3),
+  body section.contact div.social-media .social-media-element:nth-of-type(4) {
+    border-radius: 0;
+  }
+  body section.contact div.social-media .social-media-element .sm-icon {
+    width: 40px;
+    height: 40px;
+  }
+  body section.contact .contact-info p a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 660px) and (orientation: landscape) {
+  body section.main .container-for-main-elements .face-icon {
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
+    height: 150px;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 1.9rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 1.2rem;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    -ms-flex-preferred-size: 160px;
+        flex-basis: 160px;
+  }
+  body h1.page-title {
+    font-size: 2rem;
+  }
+  body h3.article-title {
+    font-size: 1.4rem;
+  }
+  body section.about article.about-article p.content {
+    font-size: 1rem;
+  }
+  body section.skills .skills-container article.skill-article p {
+    font-size: 0.8rem;
+  }
+  body section.hobby article.music-article p {
+    font-size: 1rem;
+  }
+  body section.contact header.title-block h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 810px) and (orientation: landscape) {
+  body section.main .container-for-main-elements .face-icon {
+    -ms-flex-preferred-size: 170px;
+        flex-basis: 170px;
+    height: 170px;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 2.2rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 1.3rem;
+  }
+  body section.skills .skills-container article.skill-article p {
+    font-size: 0.9rem;
+  }
+  body section.about {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1020px) and (orientation: landscape) {
+  body section.main header > .main-button {
+    font-size: 1.1rem;
+  }
+  body section.main header > nav {
+    font-size: 1.1rem;
+  }
+  body section.main .container-for-main-elements {
+    margin-top: calc(50vh - 230px/2);
+  }
+  body section.main .container-for-main-elements .face-icon {
+    -ms-flex-preferred-size: 210px;
+        flex-basis: 210px;
+    height: 210px;
+  }
+  body section.main .container-for-main-elements .main-text h1 {
+    font-size: 3.2rem;
+  }
+  body section.main .container-for-main-elements .main-text h2 {
+    font-size: 2rem;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    font-size: 1.3rem;
+    height: 60px;
+  }
+  body h1.page-title {
+    font-size: 2.5rem;
+  }
+  body h3.article-title {
+    font-size: 1.7rem;
+  }
+  body section.about article.about-article {
+    width: 80%;
+    padding: 50px 50px;
+  }
+  body section.about article.about-article p.content {
+    font-size: 1.2rem;
+  }
+  body section.skills .skills-container {
+    margin: -20px auto;
+  }
+  body section.skills .skills-container article.skill-article p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1300px) and (orientation: landscape) {
+  body h1.page-title {
+    font-size: 2.9rem;
+  }
+  body section.about article.about-article {
+    width: 70%;
+    padding: 50px 50px;
+  }
+  body section.main .container-for-main-elements button.see-more {
+    margin-left: 320px;
+  }
+  body section.hobby .music-icon {
+    margin-right: 16%;
+    width: 300px;
+    height: 300px;
+  }
+  body section.skills .skills-container {
+    margin: -40px auto;
+  }
+  body section.skills .skills-container article.skill-article {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    padding: 10px;
+  }
+  body section.skills .skills-container article.skill-article p {
+    padding: 0 15px;
+  }
+  body section.hobby article.music-article {
+    width: 44%;
+    height: auto;
+    margin-top: -60px;
+    margin-left: calc(5% + 20px);
+    padding: 40px 40px;
+  }
+  body section.hobby article.music-article p {
+    font-size: 1.2rem;
+  }
+  body section.contact div.social-media {
+    margin: -16px auto 0 auto;
+    height: auto;
+    width: 50%;
+    border-radius: 0;
+  }
+  body section.contact .contact-info p a {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
