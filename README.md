@@ -8,5 +8,5 @@ The aim of the project was to describe myself and my personal skills in web deve
 HTML, CSS/SCSS, JAVASCRIPT, EXTERNAL LIBARIES OF JAVASCRIPT (JQUERY, GSAP, AOS), Adobe XD
 
 ##HOW TO RUN:
-# 1) To run this project you can visit this page : https://xocodeox.github.io/myPortfolioWebsite/structure/index.html
-# 2) You can download this files and open index.html file which is located in structure folder.
+1) To run this project you can visit this page : https://xocodeox.github.io/myPortfolioWebsite/structure/index.html
+2) You can download this files and open index.html file which is located in structure folder.
